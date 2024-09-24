@@ -38,6 +38,22 @@ header h1 {
     text-shadow: 2px 2px #ff1493; /* Glitzy text shadow */
 }
 
+/* Add keyframes for the SVG animation */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Apply the animation to the SVG */
+header svg {
+    animation: pulse 2s infinite; /* Animation name, duration, and infinite loop */
+}
+
+
 /* Navigation bar */
 nav ul {
     display: flex;
@@ -130,3 +146,4 @@ footer p::before, footer p::after {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
