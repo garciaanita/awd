@@ -1,0 +1,132 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace/* Fun, playful font */
+}
+
+/* Set body background and default font */
+body {
+    background-color: #ffe6f0; /* Light pink background */
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+/* Container for centering content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ff69b4; /* Barbie Pink */
+    color: white;
+    border-bottom: 5px solid #ff1493; /* Darker pink for emphasis */
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px #ff1493; /* Glitzy text shadow */
+}
+
+/* Navigation bar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 40px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ff69b4; /* Bright pink text */
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff69b4;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a little glam */
+}
+
+/* Main content styling */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+section {
+    background-color: #fff0f6; /* Soft pastel pink */
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    border: 3px solid #ff69b4;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff69b4; /* Barbie Pink */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #ff1493;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff1493; /* Dark pink */
+    color: white;
+    border-top: 5px solid #ff69b4;
+    border-radius: 0 0 20px 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Add some fun decorative elements */
+footer p::before, footer p::after {
+    content: '♥';
+    margin: 0 10px;
+    color: white;
+}
+
+/* Responsive design for smaller screens */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
