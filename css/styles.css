@@ -25,7 +25,6 @@ body {
 header {
     text-align: center;
     padding: 50px 0;
-    background-color: #ff69b4; /* Barbie Pink */
     color: white;
     border-bottom: 5px solid #ff1493; /* Darker pink for emphasis */
 }
@@ -76,7 +75,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ff69b4;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a little glam */
 }
@@ -101,7 +99,7 @@ section {
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ff69b4; /* Barbie Pink */
+
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 1px 1px #ff1493;
@@ -116,7 +114,6 @@ section p {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #ff1493; /* Dark pink */
     color: white;
     border-top: 5px solid #ff69b4;
     border-radius: 0 0 20px 20px;

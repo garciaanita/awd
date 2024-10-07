@@ -19,7 +19,7 @@
   @media only screen and (max-width: 800px) and (orientation: landscape) {
     body {
       font-size: 1.2rem;
-      background-color: #ffffff;
+      background-color: #cfff55;
     }
   }
   
@@ -27,7 +27,7 @@
   @media only screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
     body {
       font-size: 1.4rem;
-      background-color: #560707;
+      background-color: #78a0ff;
     }
   }
   
@@ -43,7 +43,7 @@
   @media only screen and (min-width: 1201px) and (max-width: 1600px) {
     body {
       font-size: 1.8rem;
-      background-color: #ffffff;
+      background-color: #bb80b5;
     }
   }
   
@@ -51,7 +51,7 @@
   @media only screen and (min-width: 1601px) {
     body {
       font-size: 2rem;
-      background-color: #ffffff;
+      background-color: #0022ff;
     }
   }
   
