@@ -5,8 +5,6 @@
 */
 
 
-
-
   /* Mobile Portrait */
   @media only screen and (max-width: 600px) and (orientation: portrait) {
     body {
@@ -43,7 +41,7 @@
   @media only screen and (min-width: 1201px) and (max-width: 1600px) {
     body {
       font-size: 1.8rem;
-      background-color: #bb80b5;
+      background-color: #2f2e2d;
     }
   }
   
@@ -55,3 +53,15 @@
     }
   }
   
+  /* Responsive design for smaller screens */
+@media (min-width: 768px) {
+  main {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
