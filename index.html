@@ -5,89 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal & Modern Website</title>
-    <!-- Google Font: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Link to external CSS file -->
+    <title>My Portrait</title>
+    <!-- Google Font: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    
-    <header>
-        <div class="header-left">
-            <h1>By garciaanita</h1>
-        </div>
-        <svg fill="#000000" width="200px" height="200px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <title>cat</title>
-            <path
-                d="M28.926 1.17l-2.182 3.608c-1.876-0.608-4.669-0.489-6.426 0l-2.102-3.557c-3.452 6.448-2.475 10.523 0.159 12.549-0.403 0.252-0.818 0.529-1.247 0.833-10.979-8.759-20.863 1.106-14.379 9.92h0.050c1.163 1.687 2.503 2.731 3.95 3.277 2.050 0.773 4.159 0.551 6.236 0.257s4.109-0.663 6.046-0.525c1.937 0.138 3.874 0.635 5.647 2.569 1.209 1.318 2.926-0.101 1.486-1.507-2.185-2.134-4.525-2.959-6.825-3.122s-4.505 0.293-6.502 0.576c-1.997 0.283-3.761 0.409-5.276-0.163-0.711-0.268-1.403-0.69-2.070-1.36h22.51c1.064-3.756 1.177-7.73-0.033-10.237 3.635-1.897 5.097-6.376 0.958-13.116zM22.176 10.872c-2.316 1.117-3.367 0.212-3.817-1.656 2.273-1.41 3.626-0.278 3.817 1.656zM25.067 10.872c0.191-1.934 1.544-3.067 3.817-1.656-0.45 1.868-1.502 2.774-3.817 1.656z">
-            </path>
-        </svg>
+
+    <!-- Thin Navbar -->
+    <header class="navbar">
+        <nav>
+            <div class="navbar-content">
+                <p>Welcome, outsider</p>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <div class="grid-item">
-            <h2>Grid Item 1</h2>
-            <p>This is the content for the first grid item.</p>
-        </div>
-        <div class="grid-item">
-            <h2>Grid Item 2</h2>
-            <p>This is the content for the second grid item.</p>
-        </div>
-        <div class="grid-item">
-            <h2>Grid Item 3</h2>
-            <p>This is the content for the third grid item.</p>
-        </div>
-        <div class="grid-item">
-            <h2>Grid Item 1</h2>
-            <p>This is the content for the first grid item.</p>
-        </div>
-        <div class="grid-item">
-            <h2>Grid Item 2</h2>
-            <p>This is the content for the second grid item.</p>
-        </div>
-        <div class="grid-item">
-            <h2>Grid Item 3</h2>
-            <p>This is the content for the third grid item.</p>
-        </div>
-        
+        <!-- Creative Grid for Pictures and Videos -->
+        <section class="grid-section">
+            <div class="grid-item"><img src="your-image1.jpg" alt="image1"></div>
+            <div class="video-hover" muted><video href="./assets/images:svg/3dvideo.mp4" controls></video></div>
+            <div class="grid-item"><img src="your-image2.jpg" alt="image2"></div>
+            <div class="grid-item"><video src="your-video2.mp4" controls></video></div>
+            <div class="grid-item"><video src="your-video3.mp4" controls></video></div>
+            <div class="grid-item"><img src="your-image3.jpg" alt="image3"></div>
+            <div class="grid-item"><video src="your-video3.mp4" controls></video></div>
+            <div class="grid-item"><img src="your-image3.jpg" alt="image3"></div>
+
+        </section>
+
+        <!-- Parallax About Me Section -->
+        <section class="about-me-section">
+            <div class="about-me-content">
+                <h2>What about me</h2>
+                <p>Hello! I’m Ana García, a passionate designer with a love for creativity. I enjoy exploring different
+                    fields and constantly learning. Let’s create something amazing together!</p>
+            </div>
+        </section>
+
     </main>
 
-    <!-- Footer with Grid Layout -->
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <div class="footer-section contact">
-                <h3>Hey Contact Me</h3>
-                <p><a href="mailto:info@example.com">info@example.com</a></p>
-                <p><a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p class="copyright">&copy; 2024 By Garciaanita. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://twitter.com" target="_blank">
+                    <img src="./assets/icons/twitter/favicon.ico" alt="Twitter" />
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="./assets/icons/X/favicon.ico" alt="Instagram" />
+                </a>
             </div>
-    
-            <div class="footer-section quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-section social">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank">FB</a> |
-                    <a href="https://twitter.com" target="_blank">TW</a> |
-                    <a href="https://instagram.com" target="_blank">IG</a>
-                </div>
-            </div>
-        </div>
-    
-        <div class="footer-bottom">
-            <p>&copy; 2024 By Garciaanita. All Rights Reserved.</p>
         </div>
     </footer>
-    
-    
+
+
 
 </body>
 
