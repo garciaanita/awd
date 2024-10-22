@@ -1,13 +1,44 @@
 /* Grid styling for the analysis section */
 .web-analysis-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-    grid-template-rows: repeat(2, auto);   /* Dos filas automáticas */
-    gap: 30px; /* Espacio entre las columnas y filas */
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas de igual tamaño */
+    grid-template-rows: auto;
+    /* Dos filas automáticas */
+    gap: 30px;
+    /* Espacio entre las columnas y filas */
     padding: 20px;
 }
 
-.web-analysis {
+.web-analysis1 {
+    border: 1px solid #272727;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 4px;
+    background-color: #f8f8f8;
+    box-shadow: 7px 14px 5px rgb(192, 188, 186);
+}
+
+.web-analysis2 {
+    border: 1px solid #272727;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 4px;
+    background-color: #f8f8f8;
+    box-shadow: 7px 14px 5px rgb(192, 188, 186);
+    min-height: 100px
+}
+
+.web-analysis3 {
+    border: 1px solid #272727;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 4px;
+    background-color: #f8f8f8;
+    box-shadow: 7px 14px 5px rgb(192, 188, 186);
+}
+
+.web-analysis4 {
     border: 1px solid #272727;
     padding: 20px;
     border-radius: 20px;
@@ -29,6 +60,7 @@
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
 .web-image3 img {
     width: 100%;
     height: auto;
@@ -82,7 +114,7 @@ footer {
     margin-top: 60px;
     font-size: 0.75em;
     display: flex;
-    justify-content:center
+    justify-content: center
 }
 
 .copyright {

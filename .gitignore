@@ -1,2 +1,13 @@
 .DS_Store
+.DS_Store
+.jpg
+.jpeg
+.mp4
+.mov
+./assets/images
+*.jpg
+*.jpeg
+*.mp4
+*/images
+*.mov
 
