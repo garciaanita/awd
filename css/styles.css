@@ -31,14 +31,6 @@ body {
     background-color: #f5f5f5;
 }
 
-.grid-item img,
-.grid-item video {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .video-hover {
     width: 100%;
     /* Ajusta el tamaño como necesites */
