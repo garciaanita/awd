@@ -1,0 +1,89 @@
+/*---------------------------------------ERROR 404------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #c3c3c3;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    background: #c3c3c3;
+}
+
+/* Contenedor para centrar ambos elementos */
+.error-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Número 404 animado */
+.error {
+    font-size: 20em;
+    font-weight: 700;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: pulse 1.5s infinite ease-in-out;
+    color: #e1ff00;
+    z-index: 1;
+}
+
+/* Mensaje sobre el 404 */
+.message {
+    font-size: 2vw;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Asegura que esté en frente del "404" */
+  }  
+
+.home-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #ff3860;
+    border-radius: 5px;
+    color: #ff3860;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #ff3860;
+    color: #ffffff;
+}
+
+/* Animaciones */
+@keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .error-code {
+    font-size: 30vw;
+    color: rgba(255, 255, 255, 0.8);
+    animation: slide 9s infinite linear;
+  }
+  
