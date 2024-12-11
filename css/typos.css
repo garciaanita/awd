@@ -1,1 +1,17 @@
-@import url();
+/* ---- TYPOS FOR DISPLAY OR TITTLES ---- */
+/* Funnel Display */
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap'); /* Darker Caprasimo (W: regular just 400) */
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap'); /*Climate Crisis Display(W: 400)*/
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap'); /*Unbounded (W:200-900)*/
+
+
+/* ---- TYPOS FOR SUBTITTLES O textos mediamos ---- */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap'); /* Darker Grotesque (W: 300-900) */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap'); /* INSTRUMENT SANS (W:400-700)*/
+
+
+
+/* ---- TYPOS FOR Texts ---- */
+/* Kumbh Sans (W: 100-900) STROKE 40-300 */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap'); /* Host Grotesk (W: 300-800) 1 italics */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap'); /* INSTRUMENT SANS (W:400-700)*/
