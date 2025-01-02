@@ -4,81 +4,80 @@
   https://www.w3.org/TR/mediaqueries-3/
 */
 
+/* Mobile Portrait */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  body {
+    font-size: 1rem;
+  }
+}
 
-  /* Mobile Portrait */
-  @media only screen and (max-width: 600px) and (orientation: portrait) {
-    body {
-      font-size: 1rem;
-      background-color: #ffffff;
-    }
+/* Mobile Landscape */
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+  body {
+    font-size: 1.2rem;
   }
-  
-  /* Mobile Landscape */
-  @media only screen and (max-width: 800px) and (orientation: landscape) {
-    body {
-      font-size: 1.2rem;
-      background-color: #cfff55;
-    }
+}
+
+/* Tablet Portrait */
+@media only screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
+  body {
+    font-size: 1.4rem;
   }
-  
-  /* Tablet Portrait */
-  @media only screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
-    body {
-      font-size: 1.4rem;
-      background-color: #78a0ff;
-    }
+}
+
+/* Tablet Landscape */
+@media only screen and (min-width: 801px) and (max-width: 1200px) and (orientation: landscape) {
+  body {
+    font-size: 1.6rem;
   }
-  
-  /* Tablet Landscape */
-  @media only screen and (min-width: 801px) and (max-width: 1200px) and (orientation: landscape) {
-    body {
-      font-size: 1.6rem;
-      background-color: #ffffff;
-    }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+  body {
+    font-size: 1.8rem;
+    background-color: #2f2e2d;
   }
-  
-  /* Small Desktop */
-  @media only screen and (min-width: 1201px) and (max-width: 1600px) {
-    body {
-      font-size: 1.8rem;
-      background-color: #2f2e2d;
-    }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1601px) {
+  body {
+    font-size: 2rem;
   }
-  
-  /* Large Desktop */
-  @media only screen and (min-width: 1601px) {
-    body {
-      font-size: 2rem;
-      background-color: #0022ff;
-    }
-  }
-  
-  /* Responsive design for smaller screens */
+}
+
+/* --------Responsive design for smaller screens----------- */
 @media (min-width: 768px) {
   main {
-      grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 1024px) {
   main {
-      grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-
 /* Responsive adjustments */
 @media (max-width: 600px) {
-  header, footer {
-      flex-direction: column;
-      text-align: center;
+  header,
+  footer {
+    flex-direction: column;
+    text-align: center;
   }
-  
+
   main {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    font-size: clamp(
+      1rem,
+      5vw,
+      2em
+    ); /* El tamaño de la fuente se adapta, pero se limita entre 1rem y 5em */
   }
 
   .header-left h1 {
-      font-size: 1.2em;
+    font-size: 1.2em;
   }
 }

@@ -1,17 +1,24 @@
 /* ---- TYPOS FOR DISPLAY OR TITTLES ---- */
 /* Funnel Display */
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap'); /* Darker Caprasimo (W: regular just 400) */
-@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap'); /*Climate Crisis Display(W: 400)*/
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap'); /*Unbounded (W:200-900)*/
-
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"); /* Darker Caprasimo (W: regular just 400) */
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap"); /*Climate Crisis Display(W: 400)*/
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap"); /*Unbounded (W:200-900)*/
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap"); /* Gloock (W: unique 400) Serif*/
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"); /*Caprasimo*/
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"); /*Instrument Serif*/
 
 /* ---- TYPOS FOR SUBTITTLES O textos mediamos ---- */
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap'); /* Darker Grotesque (W: 300-900) */
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap'); /* INSTRUMENT SANS (W:400-700)*/
-
-
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"); /* Darker Grotesque (W: 300-900) */
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"); /* Instrument Sans (W:400-700)*/
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"); /*Urbanist (W:100-900)*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"); /*DM Serif Text*/
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"); /*Libre Baskerville*/
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap"); /*Oranienbaum (static)*/
 
 /* ---- TYPOS FOR Texts ---- */
 /* Kumbh Sans (W: 100-900) STROKE 40-300 */
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap'); /* Host Grotesk (W: 300-800) 1 italics */
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap'); /* INSTRUMENT SANS (W:400-700)*/
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"); /*Host Grotesk (W:300-800)*/
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"); /* Instrument Sans (W:400-700)*/
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"); /*Fraunces (W:100-900)*/
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"); /*Rethink Sans (W:400-800)*/
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"); /*Didact Gothic (static) */

@@ -1,74 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ana Garcia Peña</title>
-    <link rel="icon" href="./assets/icons/favicon/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css">
-</head>
+    <link rel="icon" href="./assets/icons/svg/5.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
     <header class="navbar">
-        <nav>
-            <div class="navbar-content">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#get-to-know-me">Get to know me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#get-in-contact">Get in contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="navbar-content">
+          <ul>
+            <li><button data-target="#home">Home</button></li>
+            <li>
+              <button data-target="#get-to-know-me">Get to know me</button>
+            </li>
+            <li><button data-target="#portfolio">Portfolio</button></li>
+            <li>
+              <button data-target="#get-in-contact">Get in contact</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!-- Main Sections -->
     <main>
-        <!-- Home Section -->
-        <section id="home" class="home-section">
-            <div class="home-content">
-                <p>Hello there :)</p>
-            </div>
-        </section>
+      <div id="custom-cursor"></div>
+      <!------------------- HOME Section ----------------------->
+      <section id="home" class="home-section">
+        <div class="home-content">
+          <p class="welcome-text">
+            Every design tells a story—let’s write yours.
+          </p>
+        </div>
+        <div class="image-layer"></div>
+        <!-- Contenedor para las imágenes -->
+      </section>
+      <section class="parallax-effect"></section>
 
-        <!-- About Me Section -->
-        <section id="get-to-know-me" class="about-me-section">
-            <div class="about-me-content">
-                <p>Hello! I’m Ana García, a passionate designer with a love for creativity. Let’s create something
-                    amazing together!</p>
-            </div>
-        </section>
+      <!-----------------ABOUT ME Section --------------------->
+      <section id="get-to-know-me" class="about-me-section">
+        <p class="about-me-text">
+          Hello! I’m Ana García, a passionate designer with a love for
+          creativity. Let’s create something amazing together!
+        </p>
+      </section>
 
-        <!-- Contact Section -->
-        <section id="get-in-contact" class="contact-section">
-            <div class="contact-content">
-                <p>Feel free to reach out! Let’s collaborate and bring ideas to life.</p>
-            </div>
-        </section>
+      <!-------------- Contact Section ---------------------->
+      <section id="get-in-contact" class="contact-section">
+        <p class="contact-text">
+          Feel free to reach out! Let’s collaborate and bring ideas to life.
+        </p>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <p class="copyright">&copy; 2024 By Garciaanita. All Rights Reserved.</p>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/bygarciaanita/" target="_blank">
-                    <img src="./assets/icons/instagram/favicon.ico" alt="Instagram" />
-                </a>
-                <a href="https://www.behance.net" target="_blank">
-                    <img src="./assets/icons/behance/favicon.ico" alt="Behance" />
-                </a>
-            </div>
+      <div class="footer-container">
+        <p class="copyright">
+          &copy; 2024 By Garciaanita. All Rights Reserved.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/bygarciaanita/" target="_blank">
+            <img src="./assets/icons/instagram/favicon.ico" alt="Instagram" />
+          </a>
+          <a href="https://www.behance.net" target="_blank">
+            <img src="./assets/icons/behance/favicon.ico" alt="Behance" />
+          </a>
+          <a href="https://github.com/garciaanita/awd" target="_blank">
+            <img src="./assets/icons/github/favicon.ico" alt="Github" />
+          </a>
         </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
