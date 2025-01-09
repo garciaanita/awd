@@ -1,0 +1,11 @@
+{
+  "name": "Ana García - Graphic Designer Portfolio",
+  "short_name": "HOME-Ana Garcia Peña",
+  "description": "A collection of my design projects showcasing my skills in graphic design.",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "./assets/icons/svg/10.svg"
+    }
+  ]
+}
