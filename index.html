@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ana Garcia Peña</title>
-    <link rel="icon" href="./assets/icons/svg/5.svg" type="image/x-icon" />
+    <link rel="icon" href="./assets/icons/svg/10.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +25,11 @@
             <li>
               <button data-target="#get-to-know-me">Get to know me</button>
             </li>
-            <li><button data-target="#portfolio">Portfolio</button></li>
+            <li>
+              <a href="/portolio.html"
+                ><button data-target="#portfolio">Work</button></a
+              >
+            </li>
             <li>
               <button data-target="#get-in-contact">Get in contact</button>
             </li>
@@ -39,21 +43,51 @@
       <div id="custom-cursor"></div>
       <!------------------- HOME Section ----------------------->
       <section id="home" class="home-section">
+          <!-- Video de fondo -->
+  <video class="background-video" autoplay loop muted playsinline>
+    <source src="https://ik.imagekit.io/garciaanita/0107%20(1).mov/ik-video.mp4?updatedAt=1736264794089" type="video/mp4" />
+  </video>
         <div class="home-content">
           <p class="welcome-text">
             Every design tells a story —let’s write yours.
           </p>
         </div>
         <div class="image-layer"></div>
+        <a href="#get-in-contact" class="CTA-button">Let’s Talk</a>
+             <!-- SVG remoto con <object> -->
+              <object
+              data="https://ik.imagekit.io/garciaanita/2.svg?updatedAt=1736255257584"
+              type="image/svg+xml"
+              class="moving-vector"></object>
       </section>
-
+      <section id="vector-words-section">
+        <div class="words-container">
+          <span class="vector">↖</span>
+          <span class="word" style="color: #ffcbe8;">SKILLS</span>
+          <span class="vector">↘</span>
+          <span class="word">CREATIVITY</span>
+          <span class="vector">→</span>
+          <span class="word">CONCEPTUALIZATION</span>
+          <span class="vector">↓</span>
+          <span class="word">STORYTELLING</span>
+          <span class="vector">↔</span>
+          <span class="word">ATTENTION TO DETAIL</span>
+          <span class="vector">↑</span>
+          <span class="word">TEAMWORK</span>
+          <span class="vector">↘</span>
+          <span class="word">COMMUNICATION<span>
+          <span class="vector">↖</span>
+        </div>
+      </section>
       <section class="parallax-effect"></section>
 
       <!-----------------ABOUT ME Section --------------------->
       <section id="get-to-know-me" class="about-me-section">
         <p class="about-me-text">
-          Hello! I’m Ana García, a passionate designer with a love for
-          creativity. Let’s create something amazing together!
+          Hi there! I’m Ana García a detail-oriented designer with a passion for
+          discovering new perspectives and pushing creative limits. I'm
+          constantly learning and evolving, always seeking new challenges and
+          opportunities to grow. Let's Get Creative! <span class="vector">↔</span>
         </p>
         <div class="image-container">
           <div class="image-frame">
@@ -82,12 +116,47 @@
         </div>
       </section>
 
+      <!-------------- Skills Section ---------------------->
+
+      <section id="vector-words-section">
+        <div class="words-container">
+          <span class="vector">↖</span>
+          <span class="word" style="color: #d6ff43;">SERVICES</span>
+          <span class="vector">↘</span>
+          <span class="word">VISUAL IDENTITY DESIGN</span>
+          <span class="vector">→</span>
+          <span class="word">PRINT DESIGN</span>
+          <span class="vector">↓</span>
+          <span class="word">ADD DESIGN </span>
+          <span class="vector">↔</span>
+          <span class="word">PACKAGING DESIGN</span>
+          <span class="vector">↑</span>
+          <span class="word">illustration</span>
+          <span class="vector">↘</span>
+          <span class="word">SOCIAL MEDIA</span>
+          <span class="vector">↖</span>
+        </div>
+      </section>
+
       <!-------------- Contact Section ---------------------->
       <section id="get-in-contact" class="contact-section">
+        <img class="svg-contact" src="https://ik.imagekit.io/garciaanita/3.svg?updatedAt=1736255257599" alt="Vector" />
         <p class="contact-text">
           Feel free to reach out! Let’s collaborate and bring ideas to life.
         </p>
+        <form class="contact-form" action="#" method="post">
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send</button>
+        </form> 
+        <!-- SVG en movimiento -->
+      <!-- SVG remoto con <object> -->
+        <object
+        data="https://ik.imagekit.io/garciaanita/7.svg?updatedAt=1736255257571"
+        type="image/svg+xml"
+        class="moving-vector"></object>
       </section>
+      
     </main>
 
     <!-- Footer -->

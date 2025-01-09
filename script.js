@@ -12,52 +12,46 @@ document.querySelectorAll(".navbar-content ul li button").forEach((button) => {
 /* ----------SECCIÓN DE HOME. WELCOME MESSAGE------------ */
 
 document.addEventListener("DOMContentLoaded", () => {
-  const textElement = document.querySelector(".welcome-text"); // Selecciona el texto
-  const text = textElement.textContent.trim(); // Elimina espacios en blanco iniciales y finales
-  textElement.innerHTML = ""; // Limpia el contenido actual
+  const textElement = document.querySelector(".welcome-text");
+  const homeSection = document.querySelector("#home");
+  let ticking = false;
 
-  // Divide cada carácter en un <span>
+  if (!textElement || !homeSection) {
+    console.error("No se encontraron los elementos necesarios.");
+    return;
+  }
+
+  // Divide el texto en spans
+  const text = textElement.textContent.trim();
+  textElement.innerHTML = "";
   text.split("").forEach((char) => {
     const span = document.createElement("span");
-    span.textContent = char === " " ? "\u00A0" : char; // Preserva espacios
-    if (char === " ") {
-      span.classList.add("no-hover"); // Agrega una clase especial para espacios
-    }
+    span.textContent = char === " " ? "\u00A0" : char;
+    if (char === " ") span.classList.add("no-hover");
     textElement.appendChild(span);
   });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  const textElement = document.querySelector(".welcome-text");
-  const homeSection = document.getElementById("home");
 
-  let ticking = false; // Evita múltiples llamadas al evento scroll
+  /* ---Botón--- */
+  document.addEventListener("DOMContentLoaded", () => {
+    const button = document.querySelector(".CTA-button");
 
-  // Configuración de Intersection Observer para detectar el fondo oscuro
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          textElement.classList.add("dark-background"); // Cambio de color cuando está sobre un fondo oscuro
-        } else {
-          textElement.classList.remove("dark-background"); // Restaura color original
-        }
-      });
-    },
-    { threshold: 0.1 } // Detecta si el texto está sobre fondo oscuro
-  );
-
-  // Observa elementos oscuros en la página
-  const darkSections = document.querySelectorAll(".section-dark");
-  darkSections.forEach((section) => observer.observe(section));
+    button.addEventListener("click", () => {
+      const targetSection = document.querySelector(button.dataset.target);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
 
   // Maneja el evento de scroll para hacer que el texto se fije en la esquina y cambie de tamaño
+  // Maneja el evento de scroll
   const handleScroll = () => {
     const sectionRect = homeSection.getBoundingClientRect();
-    const isOutOfView = sectionRect.bottom < 0; // Comprueba si la sección ha salido de la vista
+    const isOutOfView = sectionRect.bottom < 0;
 
     if (isOutOfView) {
       if (!textElement.classList.contains("fixed")) {
-        textElement.style.transition = "all 0.5s ease-in-out"; // Transición suave
+        textElement.style.transition = "all 0.5s ease-in-out";
         textElement.classList.add("fixed");
       }
     } else {
@@ -70,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ticking = false;
   };
 
-  // Maneja el evento de scroll usando requestAnimationFrame para suavizar
   window.addEventListener("scroll", () => {
     if (!ticking) {
       window.requestAnimationFrame(handleScroll);
@@ -79,9 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/*-------FOTOS HOME--------*/
-
-/* ----------SECCIÓN DE CONTENIDOS ABOUT ME ------------ */
+/* --------------SECCIÓN DE CONTENIDOS ABOUT ME ---------------- */
 
 document.addEventListener("DOMContentLoaded", () => {
   const paragraphs = document.querySelectorAll(".about-me-text"); // Selecciona los párrafos con la clase 'about-me-text'
@@ -199,6 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+/* -----------------------------SKILSS DE CONTACT ME------------ */
 
 /* -----------------------------SECCIÓN DE CONTACT ME------------ */
 document.addEventListener("DOMContentLoaded", () => {
@@ -218,10 +210,53 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const svgs = document.querySelectorAll(".moving-vector"); // Selecciona todos los elementos con la clase "moving-vector"
+
+  if (!svgs.length) return; // Si no hay SVGs, detén la ejecución
+
+  const section = document.querySelector(".contact-section, .index");
+  const sectionWidth = section.offsetWidth;
+  const sectionHeight = section.offsetHeight;
+
+  svgs.forEach((svg) => {
+    let posX = Math.random() * sectionWidth; // Posición inicial aleatoria en X
+    let posY = Math.random() * sectionHeight; // Posición inicial aleatoria en Y
+    let velX = 1.5; // Velocidad entre 0.5 y 1.5
+    let velY = 1.5; // Velocidad entre 0.5 y 1.5
+
+    const animate = () => {
+      posX += velX;
+      posY += velY;
+
+      // Rebote en los bordes
+      if (posX + svg.offsetWidth >= sectionWidth || posX <= 0) {
+        velX *= -1; // Cambia la dirección en X
+      }
+      if (posY + svg.offsetHeight >= sectionHeight || posY <= 0) {
+        velY *= -1; // Cambia la dirección en Y
+      }
+
+      // Actualiza la posición del SVG
+      svg.style.transform = `translate(${posX}px, ${posY}px)`;
+
+      requestAnimationFrame(animate); // Llama a la animación en cada frame
+    };
+
+    animate(); // Inicia la animación para cada SVG
+  });
+});
+
 /*----------------CURSOR MOUSE----------------- */
 document.addEventListener("DOMContentLoaded", () => {
   const cursor = document.getElementById("custom-cursor");
-  const buttons = document.querySelectorAll("button");
+  const buttons = document.querySelectorAll("button, a");
+
+  // Si el cursor o los botones no existen, evitas errores adicionales
+  if (!cursor || buttons.length === 0) {
+    console.error("No se encontraron los elementos esperados en el DOM");
+    return; // Detener ejecución si los elementos no están presentes
+  }
 
   // Seguir la posición del ratón
   document.addEventListener("mousemove", (e) => {
@@ -241,4 +276,38 @@ document.addEventListener("DOMContentLoaded", () => {
         "url('/assets/icons/svg/10.svg') no-repeat center center / contain";
     });
   });
+});
+
+/*-----------------------------------------Fotos PORTFOLIO---------------------------------------- */
+const tooltip = document.getElementById("tooltip");
+
+function showTooltip(element, text) {
+  // Establece el texto del tooltip
+  tooltip.textContent = text;
+
+  // Obtén las coordenadas del elemento
+  const rect = element.getBoundingClientRect();
+
+  // Ajusta la posición del tooltip
+  tooltip.style.left = `${rect.left + window.scrollX + rect.width / 2}px`;
+  tooltip.style.top = `${
+    rect.top + window.scrollY - tooltip.offsetHeight - 10
+  }px`;
+
+  // Haz visible el tooltip
+  tooltip.classList.remove("hidden");
+  tooltip.style.display = "block";
+}
+
+// Ocultar el tooltip cuando no sea necesario
+function hideTooltip() {
+  tooltip.classList.add("hidden");
+  tooltip.style.display = "none";
+}
+
+// Agrega el evento para ocultar el tooltip al hacer clic en cualquier parte de la página
+document.addEventListener("click", (event) => {
+  if (!event.target.closest(".image-item")) {
+    hideTooltip();
+  }
 });

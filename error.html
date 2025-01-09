@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERROR 404 - Página no encontrada</title>
+    <link rel="icon" href="./assets/icons/svg/10.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/error.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error 404 - Página no encontrada</title>
-    <link rel="stylesheet" href="./css/error.css">
-</head>
-
-
-<body>
-    <div class="container">
+  <body>
+    <main>
+      <!-- ---cursor ----->
+      <div id="custom-cursor"></div>
+      <!-- ----mensajes ----->
+      <section class="container">
         <div class="error-code">404</div>
         <div class="message">Sorry, te has perdido</div>
-    </div>
-
-    <a href="/" class="home-button">Volver a la Página de Inicio</a>
-    <script src="script.js"></script>
-
-</body>
-
-
+        <div id="button">
+          <a href="index.html" class="home-button"> <p>VOLVER AL HOME</p></a>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
