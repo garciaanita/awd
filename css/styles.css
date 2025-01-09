@@ -568,6 +568,7 @@ footer {
 
 .index-list li a:hover {
   color: #d6ff43;
+  cursor: none;
 }
 
 /*---------colorbar-------*/

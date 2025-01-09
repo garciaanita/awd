@@ -268,12 +268,12 @@ document.addEventListener("DOMContentLoaded", () => {
   buttons.forEach((button) => {
     button.addEventListener("mouseenter", () => {
       cursor.style.background =
-        "url('/assets/icons/svg/12.svg') no-repeat center center / contain";
+        "url('https://ik.imagekit.io/garciaanita/12.svg?updatedAt=1736419441426') no-repeat center center / contain";
     });
 
     button.addEventListener("mouseleave", () => {
       cursor.style.background =
-        "url('/assets/icons/svg/10.svg') no-repeat center center / contain";
+        "url('https://ik.imagekit.io/garciaanita/10.svg?updatedAt=1736419441620') no-repeat center center / contain";
     });
   });
 });
