@@ -310,3 +310,10 @@ document.addEventListener("click", (event) => {
     hideTooltip();
   }
 });
+
+// Para ver que falla en Url//
+document.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    console.log("Navigating to:", link.href);
+  });
+});
