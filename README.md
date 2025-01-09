@@ -22,7 +22,7 @@ Este proyecto está bajo la licencia Creative Commons BY-NC SA (ATTRIBUTION-NONC
 
 Puedes ver la demo en vivo de mi mini portfolio en el siguiente enlace:
 
-[Demo en vivo de mi portfolio](https://www.ejemplo.com/mi-portfolio)
+[Demo de mi web](https://garciaanita.github.io/awd/)
 
 Este enlace te llevará a la versión en línea de mi portfolio, donde podrás ver mis proyectos de diseño y explorar mi trabajo.
 
