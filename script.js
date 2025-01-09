@@ -252,10 +252,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const cursor = document.getElementById("custom-cursor");
   const buttons = document.querySelectorAll("button, a");
 
-  // Si el cursor o los botones no existen, evitas errores adicionales
   if (!cursor || buttons.length === 0) {
     console.error("No se encontraron los elementos esperados en el DOM");
-    return; // Detener ejecución si los elementos no están presentes
+    return;
   }
 
   // Seguir la posición del ratón

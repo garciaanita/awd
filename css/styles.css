@@ -509,7 +509,7 @@ footer {
   padding-top: 5px;
 }
 
-/*--------------------------- MOUSE CURSOR -----------------------------*/
+/*--------------------------- MOUSE CURSOR ----------------------------*/
 #custom-cursor {
   position: fixed; /* Siempre visible en la pantalla */
   width: 50px;
