@@ -514,7 +514,8 @@ footer {
   position: fixed; /* Siempre visible en la pantalla */
   width: 50px;
   height: 50px;
-  background: url("/assets/icons/svg/10.svg") no-repeat center center / contain;
+  background: url("https://ik.imagekit.io/garciaanita/10.svg?updatedAt=1736419441620")
+    no-repeat center center / contain;
   pointer-events: none; /* Elimina la interacción del cursor */
   z-index: 10000; /* Asegura que esté encima de todo */
   transform: translate(-50%, -50%);
