@@ -5,7 +5,8 @@
 
 ## Comments
 - Nice portfolio!
-- Left vertical men
+- Left vertical menu
 - Hero video landing page
-- Emojis animations customization
-- 
+- Emoji animations customization
+- Effective colors
+- Congratulations!
